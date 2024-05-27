@@ -1,0 +1,32 @@
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.logo__icon {
+	flex-shrink: 0;
+	color: $yellow;
+
+	@include bp($tablet, min) {
+		width: 3.2rem;
+		height: 3.2rem;
+	}
+
+	@include bp($tablet) {
+		width: 2.4rem;
+		height: 2.4rem;
+	}
+}
+
+.logo__text {
+	font-family: $font_2;
+	text-transform: uppercase;
+
+	@include bp($tablet, min) {
+		font-size: 2.2rem;
+	}
+
+	@include bp($tablet) {
+		font-size: 1.8rem;
+	}
+}

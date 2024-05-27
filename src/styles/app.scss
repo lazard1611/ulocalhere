@@ -1,0 +1,26 @@
+@import 'variable';
+
+/*============Mixins==========*/
+@import 'mixins/global-mixins';
+@import 'mixins/buttons-mixins';
+@import 'mixins/typography';
+
+/*============Base==========*/
+@import 'base/fonts';
+@import 'base/reset';
+@import 'base/base';
+
+/*============Base==========*/
+@import 'ui/forms';
+@import 'ui/buttons';
+
+/*============Components==========*/
+@import 'components/header';
+@import 'components/social';
+@import 'components/logo';
+@import 'components/hero';
+@import 'components/benefits';
+@import 'components/contact';
+@import 'components/footer';
+
+

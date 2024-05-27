@@ -1,0 +1,10 @@
+.footer {
+	padding: 3rem var(--gl-indent);
+	min-height: var(--height-footer);
+	background-color: $blue;
+}
+
+.footer__container {
+	display: flex;
+	justify-content: space-between;
+}

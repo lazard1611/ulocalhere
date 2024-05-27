@@ -1,0 +1,65 @@
+.header {
+	z-index: 100;
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	height: var(--height-header);
+	width: 100%;
+
+	display: flex;
+	align-items: center;
+
+	padding: 0 var(--gl-indent);
+
+	&.header--scroll_state {
+		background-color: rgba($blue, 0.7);
+	}
+}
+
+.header__container {
+	display: flex;
+	align-items: center;
+}
+
+.header__localization {
+	flex: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 1rem;
+}
+
+.header__localization_list {
+	display: flex;
+	align-items: center;
+	margin: 0 -1.2rem -1.2rem 0;
+}
+
+.header__localization_item {
+	padding: 0 1.2rem 1.2rem 0;
+}
+
+.header__localization_link {
+	font-family: $font_2;
+
+	transition: color 0.3s ease;
+	text-transform: uppercase;
+
+	@include bp($tablet, min) {
+		font-size: 1.8rem;
+	}
+
+	@include bp($tablet) {
+		font-size: 1.6rem;
+	}
+
+	&:focus,
+	&:hover {
+		color: $yellow;
+	}
+}
+
+.header__social {
+
+}

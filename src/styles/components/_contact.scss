@@ -1,0 +1,54 @@
+.contact {}
+
+.contact__container {}
+
+.contact__title {
+	color: $yellow;
+}
+
+.contact__wrap {
+	display: flex;
+}
+
+.contact__descriprion {
+	font-family: $font_2;
+	@include h2;
+}
+
+.contact__list {
+
+}
+
+.contact__list_item {
+	display: flex;
+}
+
+.contact__list_icon {
+	flex-shrink: 0;
+
+	margin-right: 2rem;
+}
+
+.contact__form {
+	display: grid;
+
+
+	@include bp($tablet, min) {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 3.5rem;
+	}
+
+	@include bp($tablet) {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+}
+
+.form_input__field {
+	&:nth-child(5) {
+
+		@include bp($tablet, min) {
+			grid-column: 1 / 3;
+		}
+	}
+}

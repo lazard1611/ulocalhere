@@ -1,0 +1,57 @@
+.hero {
+	min-height: 100vh;
+	@include bp($tablet, min) {
+		padding-top: 9rem;
+	}
+}
+
+.hero__container {
+	position: relative;
+}
+
+.hero__wrap {
+	@include bp($tablet, min) {
+		display: flex;
+		justify-content: flex-end;
+	}
+}
+
+.hero__content {
+	@include bp($tablet, min) {
+		width: 58.3%;
+	}
+}
+
+.hero__title {
+	color: $yellow;
+	line-height: 1;
+
+	&:not(:last-child) {
+		margin-bottom: 3.4rem;
+	}
+}
+
+.hero__pic {
+	@include bp($tablet, min) {
+		position: absolute;
+		top: -19rem;
+		left: 5.4rem;
+
+		width: clamp(25rem, 40vw, 67.2rem);
+	}
+
+	@include bp($tablet) {
+		max-width: 40rem;
+		margin: 0 auto;
+	}
+
+	&:not(:last-child) {
+		@include bp($tablet) {
+			margin-bottom: 2rem;
+		}
+	}
+}
+
+.hero__img {
+	@include cover_img;
+}
