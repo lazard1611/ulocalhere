@@ -16,14 +16,17 @@ html {
 	font-family: $font_1;
 	line-height: 1.33;
 
-	//@include bp($tabletPortrait, min) {
-	//	font-size: calc(100vw / 991 * 10);
-	//}
-	//
-	//@include bp($tabletPortrait, $small) {
-	//	font-size: 10px;
-	//}
-	font-size: 10px;
+	@include bp($desktop, min) {
+		font-size: calc(100vw / 1440 * 10);
+	}
+
+	@include bp($desktop, $laptop) {
+		font-size: calc(100vw / 1200 * 10);
+	}
+	
+	@include bp($laptop, $small) {
+		font-size: 10px;
+	}	
 
 	@include bp($small) {
 		font-size: calc(100vw / 375 * 10);

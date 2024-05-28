@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
+    "@barba/core": "^2.9.7",
     "gh-pages": "^6.1.1",
     "gsap": "^3.12.5"
   }
