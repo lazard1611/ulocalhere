@@ -78,9 +78,9 @@
 					</picture>
 
 					<div class="hero__content">
-						<h1 class="title hero__title">We empower businesses <br>
+						<h1 class="title hero__title js-fade-el">We empower businesses <br>
 							to thrive in international markets</h1>
-						<p>Our team provide chatbot implementation, translations, localization, and marketing solutions to businesses looking to succeed in the European Union.</p>
+						<p class="js-fade-el">Our team provide chatbot implementation, translations, localization, and marketing solutions to businesses looking to succeed in the European Union.</p>
 					</div>
 
 				</div>
@@ -89,7 +89,7 @@
 
 		<section class="section benefits">
 			<div class="benefits__container">
-				<div class="benefits__block">
+				<div class="benefits__block js-fade-el">
 					<picture class="benefits__pic">
 						<img class="benefits__img" src="img/benefits-1.png" alt="benefits">
 					</picture>
@@ -98,7 +98,7 @@
 						<p>Well-translated texts and perfectly chosen words minimize customer loss and maintain a high level of trust in the brand.</p>
 					</div>
 				</div>
-				<div class="benefits__block">
+				<div class="benefits__block js-fade-el">
 					<picture class="benefits__pic">
 						<img class="benefits__img" src="img/benefits-2.png" alt="benefits">
 					</picture>
@@ -107,7 +107,7 @@
 						<p>Entering a new market without localisation makes it difficult to compete with local businesses, as understanding the local culture and best practices is crucial in order to avoid missed opportunities and unhappy customers.</p>
 					</div>
 				</div>
-				<div class="benefits__block">
+				<div class="benefits__block js-fade-el">
 					<picture class="benefits__pic">
 						<img class="benefits__img" src="img/benefits-3.png" alt="benefits">
 					</picture>
@@ -121,14 +121,14 @@
 
 		<section class="section contact">
 			<div class="contact__container">
-				<h2 class="contact__title title">Get in touch</h2>
+				<h2 class="contact__title title js-fade-el">Get in touch</h2>
 				<div class="contact__wrap">
-					<div class="contact__descriprion">Contact us today<br>
+					<div class="contact__descriprion js-fade-el">Contact us today<br>
 						by filling out the contact form,<br>
 						or by booking a meeting<br>
 						to discuss how we can tailor our services<br>
 						to meet your specific needs.</div>
-					<ul class="contact__list">
+					<ul class="contact__list js-fade-el">
 						<li class="contact__list_item">
 							<div class="contact__list_icon">
 								<svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -157,26 +157,28 @@
 						</li>
 					</ul>
 				</div>
-				<form action="" class="contact__form">
+				<form action="" class="contact__form js-fade-el">
 					<div class="form_input__field">
-						<input type="text" class="form_input__element">
+						<input required placeholder="First Name" type="text" class="form_input__element">
 					</div>
 					<div class="form_input__field">
-						<input type="text" class="form_input__element">
+						<input required placeholder="Second Name" type="text" class="form_input__element">
 					</div>
 					<div class="form_input__field">
-						<input type="text" class="form_input__element">
+						<input required placeholder="Company" type="text" class="form_input__element">
 					</div>
 					<div class="form_input__field">
-						<input type="email" class="form_input__element">
+						<input required placeholder="Email" type="email" class="form_input__element">
 					</div>
 					<div class="form_input__field">
-						<textarea name="" id="" cols="30" rows="10" class="form_textarea__element"></textarea>
+						<textarea required placeholder="Message" name="" id="" cols="30" rows="10" class="form_textarea__element"></textarea>
 					</div>
 
-					<batton type="submit" class="btn_normal">
-						SEND
-					</batton>
+					<div class="contact__form_btn">
+						<batton type="submit" class="btn_normal">
+							SEND
+						</batton>
+					</div>
 
 				</form>
 			</div>

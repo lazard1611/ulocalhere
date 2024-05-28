@@ -1,10 +1,12 @@
 {
   "main": "index.js",
   "description": "",
+  "homepage": "https://lazard1611.github.io/ulocalhere/",
   "scripts": {
     "start": "webpack server",
     "build-dev": "webpack",
     "build": "set NODE_ENV=production&&webpack",
+    "deploy": "gh-pages -d dist",
     "clear": "rd /s /q dist"
   },
   "devDependencies": {
@@ -31,6 +33,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
+    "gh-pages": "^6.1.1",
     "gsap": "^3.12.5"
   }
 }

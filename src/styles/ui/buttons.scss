@@ -1,4 +1,5 @@
 .btn_normal {
 	@include btn_size_normal;
 	@include btn_style_yellow;
+ min-width: 20.2rem;
 }

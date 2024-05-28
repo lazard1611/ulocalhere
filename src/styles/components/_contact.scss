@@ -4,23 +4,52 @@
 
 .contact__title {
 	color: $yellow;
+
+	&:not(:last-child) {
+		margin-bottom: 2.6rem;
+	}
 }
 
 .contact__wrap {
-	display: flex;
+
+	@include bp($laptop, min) {
+		display: flex;
+	}
+
+	&:not(:last-child) {
+		margin-bottom: 5rem;
+	}
 }
 
 .contact__descriprion {
 	font-family: $font_2;
 	@include h2;
+
+	@include bp($laptop, min) {
+		width: 62.8%;
+		padding-right: 2rem;
+	}
+
+	&:not(:last-child) {
+		@include bp($laptop) {
+			margin-bottom: 3rem;
+		}
+	}
 }
 
 .contact__list {
-
+	@include bp($laptop, min) {
+		width: 37.2%;
+	}
 }
 
 .contact__list_item {
 	display: flex;
+	align-items: center;
+
+	&:not(:last-child) {
+		margin-bottom: 1rem;
+	}
 }
 
 .contact__list_icon {
@@ -29,8 +58,14 @@
 	margin-right: 2rem;
 }
 
+.contact__list_text {
+	font-family: $font_2;
+	@include h3;
+}
+
 .contact__form {
 	display: grid;
+	max-width: 79rem;
 
 
 	@include bp($tablet, min) {
